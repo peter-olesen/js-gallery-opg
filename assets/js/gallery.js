@@ -39,6 +39,8 @@ function buildCard(imageUrl, myGalleryElement){
 function buildBigImage(imageUrl, myGalleryElement){
     const myArticle = document.createElement('article');
     const myImage = document.createElement('img');
+    
+    myImage.classList.add('bigImage');
 
     myImage.src = imageUrl;
 
@@ -50,4 +52,5 @@ function buildBigImage(imageUrl, myGalleryElement){
     myArticle.appendChild(myImage);
 
     myGalleryElement.appendChild(myArticle);
+
 }
